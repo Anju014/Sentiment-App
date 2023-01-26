@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/index.js"></script>
+    
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <!-- date -->
+    <div>
+        <h4 id="display_date">Date</h4>
+    </div>
+   
+    <!-- input -->
+    <div>
+        <h4>Enter Text</h4>
+        <textarea id="text" name="text_input"  cols="30" rows="10" placeholder="How was your day?"></textarea>
+    </div>
+
+    <!-- button -->
+    <div>
+        <button id="predict_button" type="submit">Predict Emotion</button>
+    </div>
+
+    <!-- Output: Predicted Emotion -->
+    <div>
+        <p id="prediction" style="display: none">     </p>
+        <img id="emo_img_url" width="50" height="50" style="display:none">
+    </div>
+</body>
+</html>
